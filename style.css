@@ -1,0 +1,91 @@
+:root {
+  --project-circle-size: 6rem;
+  --outer-project-circle-size: 30rem;
+}
+.photo {
+  position: relative;
+  background-color: red;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  margin: 15rem;
+}
+
+.project_preview_holder {
+  position: absolute;
+  animation-name: rotate-around;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  height: var(--outer-project-circle-size);
+  width: var(--outer-project-circle-size);
+  top: calc( 50% - calc(var(--outer-project-circle-size) / 2));
+  left: calc( 50% - calc(var(--outer-project-circle-size) / 2));
+}
+
+.project_preview_holder:hover {
+  animation-play-state: paused;
+}
+
+.project_preview_holder:hover * {
+  animation-play-state: paused;
+}
+
+
+@keyframes rotate-around {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.project_preview {
+  position: absolute;
+  border-radius: 50%;
+  height: var(--project-circle-size);
+  width: var(--project-circle-size);
+  text-align: center;
+  animation-name: stay-upright;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.left {
+  left: 0;
+  bottom: 0;
+  background-color: greenyellow;
+}
+
+.right {
+  right: 0;
+  background-color: orange;
+}
+
+.top {
+  top: 0;
+  background-color: rgb(106, 106, 228);
+}
+
+.bottom {
+  bottom: 0;
+  right: 0;
+  background-color: indianred;
+}
+
+.project_preview:hover {
+  animation-play-state: paused;
+}
+
+@keyframes stay-upright {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
