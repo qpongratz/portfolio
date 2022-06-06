@@ -28,6 +28,7 @@
   width: 100%;
   object-fit: cover;
   border-radius: inherit;
+  transition: transform 1s;
 }
 
 .project_preview_holder {
@@ -91,8 +92,12 @@
   padding-right: 1rem;
 }
 
+.project_preview:hover>.bubble_image {
+  transform: scale(1.2);
+}
+
 .project_preview:hover .explanation {
-  transform: scale(1);
+  transform: scale(1.2);
 }
 
 .left {
