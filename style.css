@@ -13,6 +13,16 @@
   margin-inline: auto;
 }
 
+.name {
+  font-size: 14rem;
+  overflow-wrap: anywhere;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+
+}
+
 .bubble_image {
   height: 100%;
   width: 100%;
