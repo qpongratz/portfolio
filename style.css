@@ -82,6 +82,7 @@ h2 {
   border-radius: inherit;
   width: 100%;
   aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 .explanation {
@@ -161,7 +162,7 @@ h2 {
   }
 
   .project_anchor {
-    margin: 15rem;
+    margin-top: 18rem;
     margin-inline: auto;
   }
 
@@ -195,7 +196,8 @@ h2 {
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    transition: border-radius 1s;
+    transition: border-radius .7s;
+    margin: 0;
   }
   .left {
     left: 0;
@@ -217,12 +219,12 @@ h2 {
   }
   .project_preview:hover>.bubble_image,
   .project_preview:focus-visible>.bubble_image {
-    transform: scale(1.2);
+    transform: scale(1.21);
   }
 
   .project_preview:hover .explanation,
   .project_preview:focus-visible .explanation {
-    transform: scale(1.2);
+    transform: scale(1.21) translateX(calc(var(--project-circle-size) * -.09));
   }
 
   .project_preview:hover {
@@ -231,14 +233,14 @@ h2 {
 
   .explanation {
     background-color: var(--off-black);
-    transition: all 1s;
+    transition: all;
+    transition-duration: .7s;
     transform: scale(0);
     transform-origin: 0%;
     position: absolute;
     width: max-content;
     height: 100%;
     top: 0;
-    left: 0;
     padding-left: calc(100% + 1rem);
     padding-right: 1rem;
     border-radius: 1rem;
@@ -249,6 +251,6 @@ h2 {
     width: 100%;
     object-fit: cover;
     border-radius: inherit;
-    transition: transform 1s;
+    transition: transform .7s;
   }
 }
