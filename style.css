@@ -9,6 +9,11 @@
   --white: #eee5e9;
 }
 
+.project_preview:focus-visible .explanation {
+  outline-offset: .5rem ;
+  outline: 1rem solid var(--pink);
+}
+
 body {
   background-color: #8fdc91;
 }
@@ -92,7 +97,7 @@ body {
 }
 
 .explanation {
-  transition: transform 1s;
+  transition: all 1s;
   transform: scale(0);
   transform-origin: 0%;
   position: absolute;
@@ -104,6 +109,7 @@ body {
   z-index: -1;
   padding-left: calc(100% + 1rem);
   padding-right: 1rem;
+
 }
 
 .project_preview:hover>.bubble_image,
@@ -119,23 +125,19 @@ body {
 .left {
   left: 0;
   bottom: 0;
-  background-color: greenyellow;
 }
 
 .right {
   right: 0;
-  background-color: orange;
 }
 
 .top {
   top: 0;
-  background-color: rgb(106, 106, 228);
 }
 
 .bottom {
   bottom: 0;
   right: 0;
-  background-color: indianred;
 }
 
 .project_preview:hover {
