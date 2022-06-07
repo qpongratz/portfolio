@@ -131,6 +131,7 @@ h2 {
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
+  margin-top: 1rem;
 }
 
 .explanation {
@@ -180,6 +181,7 @@ h2 {
 }
 
 .control {
+  opacity: 80%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -266,7 +268,7 @@ h2 {
     border-radius:0 0 1rem 1rem;
     height: 3rem;
     width: auto;
-    margin-left: 2rem;
+    left: 2rem;
     z-index: 20;
   }
   .navigation {
@@ -378,14 +380,19 @@ h2 {
     object-fit: cover;
     border-radius: inherit;
     transition: transform var(--short-animation-duration);
+    margin-top: 0;
   }
   main {
     margin-top: 20rem;
-  }
-  .card {
-    border-radius: 1rem;
   }
   .control {
     opacity: 0;
   }
 }
+
+@media (min-width: 60rem) {
+  .card {
+    border-radius: 1rem;
+  }
+}
+
