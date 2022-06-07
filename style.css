@@ -12,7 +12,7 @@
   --long-animation-duration: 12s;
   --short-animation-duration: 700ms;
 
-
+  font-family: 'Montserrat', sans-serif;
   color: var(--off-black);
   scroll-behavior: smooth;
 }
@@ -24,6 +24,8 @@
 .hidden {
   display: none;
 }
+
+
 .project_preview:focus-visible .explanation {
   outline-offset: .5rem ;
   outline: 1rem solid var(--pink);
@@ -91,6 +93,14 @@ nav{
 
 h2 {
   text-align: center;
+}
+
+p a {
+  color: var(--orange);
+  text-decoration: none;
+}
+p a:visited {
+  color: var(--pink);
 }
 
 .navigation a {
@@ -255,6 +265,11 @@ h2 {
     background-image: url('pictures/name.svg');
     background-repeat:no-repeat;
     background-size: 1280px ;
+  }
+  .visibly-hidden-unless-small {
+    position: absolute;
+    left: -1000%;
+    top: -1000%;
   }
   .name {
     position: absolute;

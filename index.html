@@ -7,6 +7,9 @@
   <title>Quentin Pongratz</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -25,15 +28,15 @@
         <a href="#project_details">
           <li>Project Details</li>
         </a>
-        <a href="#contact">
+        <!-- <a href="#contact">
           <li>Contact Me</li>
-        </a>
+        </a> -->
       </ul>
     </nav>
-    <h1 class="name" id="top">Quentin <br>A <br>Pongratz</h1>
+    <h1 class="name visibly-hidden-unless-small" id="top">Quentin <br>A <br>Pongratz</h1>
     <div class="project_anchor">
       <img class="bubble_image center" src="pictures/quentin.jpg" alt="picture of quentin">
-      <h2>Projects</h2>
+      <h2 class="visibly-hidden-unless-small">Projects</h2>
       <div class="project_preview_holder">
         <a href="#first_details" class="project_preview top">
           <div class="explanation">
@@ -65,10 +68,24 @@
   <main>
     <section class="card" id="about_me">
       <h2>About Me</h2>
+      <p>My name is Quentin Pongratz. I am a self-taught web developer with a B.S. in Mathematics and a B.A. in English, looking to transition into a career in the field. </p>
+      <p>Experience with: </p>
+      <ul>
+        <li>Ruby</li>
+        <li>Ruby on Rails (Including Turbo and Stimulus)</li>
+        <li>Git</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>SQL (Experience with both MySQL and Postgresql)</li>
+      </ul>
+      <p>Collected below are projects which showcase different aspects of my abilities (Not counting the html, css, and javascript on display on the site itself).
+         Feel free to see more projects over at <a href="https://github.com/qpongratz">my github</a>,
+         and if you have any questions don't hesitate to contact me at <a href="mailto:qpongratz@gmail.com">qpongratz@gmail.com</a>.</p>
 
     </section>
     <section id="project_details">
-      <h2>Project Details</h2>
+      <h2 class="visibly-hidden-unless-small">Project Details</h2>
       <article class="card" id="first_details">
         <h3 class="project_details_title">Spacebook</h3>
         <div class="screenshots" id="first_screenshots">
@@ -81,7 +98,7 @@
         <p>A social media site modeled after basic facebook functionality and styling developed in Ruby on Rails.</p>
         <h4>What does it show?</h4>
         <ul>
-          <li>MVC Architecture</li>
+          <li>MVC Architecture and the Rails use of convention over configuration</li>
           <li>Turbo Frames and Turbo Streams for single page functionality for basic CRUD actions with posts, comments, and reactions</li>
           <li>CSS organized with Sass use of nesting and separating out individual components</li>
           <li>StimulusJS for reusable javascript elements</li>
@@ -90,6 +107,7 @@
           <li>After action callbacks to provide new users with pending friend requests</li>
           <li>A number of tests (including systems tests) using Minitest and Capybara</li>
           <li>Infinite pagination for main feed</li>
+          <li>Responsive design for mobile devices</li>
           <li>Deployment on Heroku</li>
         </ul>
         <h4>See more?</h4>
@@ -97,13 +115,13 @@
           <li><a href="https://github.com/qpongratz/facebook-clone"> <img src="pictures/github-icon.png" alt=""> Repository</a></li>
           <li><a href="https://spacebook-q.herokuapp.com/"><img src="pictures/live-icon.png" alt="">Live</a></li>
         </ul>
-      </article>
+      </article>sss
 
       <article class="card" id="second_details">
         <h3 class="project_details_title">Chess</h3>
         <div class="screenshots" id="second_screenshots">
-          <img src="pictures/chess1.png" alt="screenshot" class="screenshot">
           <img src="pictures/chess2.png" alt="screenshot" class="screenshot">
+          <img src="pictures/chess1.png" alt="screenshot" class="screenshot">
           <button class="control" id="left"> < </button>
           <button class="control" id="right"> > </button>
         </div>
@@ -111,8 +129,11 @@
         <p>A command line chess game built in Ruby</p>
         <h4>What does it show?</h4>
         <ul>
+          <li>Fudamental Ruby knowledge</li>
           <li>Object Oriented Design</li>
           <li>Significant test coverage with Rspec</li>
+          <li>Code organization</li>
+          <li>Saving and loading games with serialization</li>
         </ul>
         <h4>See more?</h4>
         <ul class="links">
@@ -122,7 +143,7 @@
       </article>
 
       <article class="card" id="third_details">
-        <h3 class="project_details_title">Connect Four</h3>
+        <h3 class="project_details_title">TBD</h3>
         <div class="screenshots" id="third_screenshots">
           <img src="" alt="" class="screenshot">
           <img src="" alt="" class="screenshot">
@@ -163,9 +184,9 @@
         </ul>
       </article>
     </section>
-    <section class="card" id="contact">
+    <!-- <section class="card" id="contact">
       <h2>Contact Me</h2>
-    </section>
+    </section> -->
   </main>
 </body>
 
