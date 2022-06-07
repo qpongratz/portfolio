@@ -120,6 +120,16 @@ h2 {
 }
 
 @media (min-width: 600px) {
+  body {
+    background-image: url('pictures/Name.svg.svg');
+    background-repeat:no-repeat;
+    background-size: 1280px ;
+  }
+  .name {
+    position: absolute;
+    left: -200%;
+    top: -200%;
+  }
   nav {
     position: fixed;
     top: 0;
@@ -148,21 +158,8 @@ h2 {
   .navigation a:last-child {
     border-radius: 0 0 1rem 0;
   }
-  .name {
-    text-align: left;
-    font-size: 14rem;
-    overflow-wrap: anywhere;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    color:var(--off-black);
-    opacity: 60%;
-    z-index: -10;
-  }
-
   .project_anchor {
-    margin-top: 18rem;
+    margin-top: 22rem;
     margin-inline: auto;
   }
 
