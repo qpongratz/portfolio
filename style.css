@@ -124,11 +124,10 @@ h2 {
 
 .screenshots {
   display: flex;
-  width: 100%;
 }
 
 .screenshot {
-  min-width: 50%;
+  max-width: 100%;
 }
 
 .screenshot:first-child {
