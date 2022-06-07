@@ -41,3 +41,14 @@ const screenshots = document.querySelectorAll('.screenshots')
 screenshots.forEach ((element) => {
   slideManager(element.id);
 });
+
+const navToggle = document.getElementById('nav-toggle');
+const navMenu = document.querySelector('nav');
+
+const toggleMenu = () => {
+  navMenu.classList.toggle('off-screen');
+  navToggle.classList.toggle('off-screen');
+}
+
+navToggle.addEventListener('click', toggleMenu);
+navMenu.addEventListener('click', toggleMenu)

@@ -67,7 +67,7 @@ nav{
 }
 
 .off-screen {
-  transform: translateY(-100%);
+  transform: translateY(-100%) !important;
 }
 
 .navigation {
@@ -269,7 +269,7 @@ h2 {
     border-radius:0 0 1rem 1rem;
     height: 3rem;
     width: auto;
-    margin-left: 1rem;
+    margin-left: 2rem;
     z-index: 20;
   }
   .navigation {
