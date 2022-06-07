@@ -9,7 +9,7 @@
   --orange: #ff9f1c;
   --white: #eee5e9;
   /* Timing Variables */
-  --long-animation-duration: 12s;
+  --long-animation-duration: 15s;
   --short-animation-duration: 700ms;
 
   font-family: 'Montserrat', sans-serif;
@@ -398,7 +398,7 @@ p a:visited {
     margin-top: 0;
   }
   main {
-    margin-top: 20rem;
+    margin-top: 22rem;
   }
   .control {
     opacity: 0;
