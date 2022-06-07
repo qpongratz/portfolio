@@ -108,13 +108,18 @@ h2 {
   text-align: center;
 }
 
-section {
+.card {
   background-color: var(--off-black);
   color: var(--white);
   max-width: 45rem;
   margin-inline: auto;
   padding: 1rem;
   margin-block: 1rem;
+}
+
+.project_details_title {
+  font-size: 3rem;
+  margin-block: .5rem;
 }
 
 .screenshots {
@@ -126,13 +131,17 @@ section {
   min-width: 50%;
 }
 
+.screenshot:first-child {
+  display:none;
+}
+
 .links {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   list-style-type: none;
   padding: 0;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .links a {
@@ -141,6 +150,7 @@ section {
   display: flex;
   align-items: center;
   gap: .5rem;
+  font-size: 1.5rem;
 }
 
 .links a:hover,
@@ -300,7 +310,11 @@ section {
   main {
     margin-top: 20rem;
   }
-  section {
+  .card {
     border-radius: 1rem;
+  }
+
+  .screenshot:first-child {
+    display: initial;
   }
 }
