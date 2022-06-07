@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quentin Pongratz</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
@@ -30,25 +31,25 @@
       <img class="bubble_image center" src="pictures/quentin.jpg" alt="picture of quentin">
       <h2>Projects</h2>
       <div class="project_preview_holder">
-        <a href="#facebook_clone_details" class="project_preview top">
+        <a href="#first_details" class="project_preview top">
           <div class="explanation">
             <h3>Social Media Site</h3>
           </div>
           <img class="bubble_image" src="pictures/social-media.jpg" alt="social-media">
         </a>
-        <a href="#chess_details" class="project_preview right">
+        <a href="#second_details" class="project_preview right">
           <div class="explanation">
             <h3>Chess</h3>
           </div>
           <img class="bubble_image" src="pictures/chess3.jpg" alt="chess">
         </a>
-        <a href="#connect_four_details" class="project_preview bottom">
+        <a href="#third_details" class="project_preview bottom">
           <div class="explanation">
             <h3>Connect Four</h3>
           </div>
           <img class="bubble_image" src="pictures/connect4.jpg" alt="connect four">
         </a>
-        <a href="#TBD_details" class="project_preview left">
+        <a href="#fourth_details" class="project_preview left">
           <div class="explanation">
             <h3>TBD</h3>
           </div>
@@ -64,11 +65,13 @@
     </section>
     <section id="project_details">
       <h2>Project Details</h2>
-      <article class="card" id="facebook_clone_details">
+      <article class="card" id="first_details">
         <h3 class="project_details_title">Spacebook</h3>
-        <div class="screenshots">
+        <div class="screenshots" id="first_screenshots">
           <img src="pictures/spacebook1.png" alt="screenshot" class="screenshot">
           <img src="pictures/spacebook2.png" alt="screenshot" class="screenshot">
+          <button class="control" id="left"> < </button>
+          <button class="control" id="right"> > </button>
         </div>
         <h4>What is this?</h4>
         <p>A social media site modeled after basic facebook functionality and styling developed in Ruby on Rails.</p>
@@ -92,11 +95,13 @@
         </ul>
       </article>
 
-      <article class="card" id="chess_details">
+      <article class="card" id="second_details">
         <h3 class="project_details_title">Chess</h3>
-        <div class="screenshots">
+        <div class="screenshots" id="second_screenshots">
           <img src="pictures/chess1.png" alt="screenshot" class="screenshot">
           <img src="pictures/chess2.png" alt="screenshot" class="screenshot">
+          <button class="control" id="left"> < </button>
+          <button class="control" id="right"> > </button>
         </div>
         <h4>What is this?</h4>
         <p>A command line chess game built in Ruby</p>
@@ -112,11 +117,13 @@
         </ul>
       </article>
 
-      <article class="card" id="connect_four_details">
+      <article class="card" id="third_details">
         <h3 class="project_details_title">Connect Four</h3>
-        <div class="screenshots">
+        <div class="screenshots" id="third_screenshots">
           <img src="" alt="" class="screenshot">
           <img src="" alt="" class="screenshot">
+          <button class="control" id="left"> < </button>
+          <button class="control" id="right"> > </button>
         </div>
         <h4>What is this?</h4>
         <p>Description</p>
@@ -131,11 +138,13 @@
         </ul>
       </article>
 
-      <article class="card" id="TBD_details">
+      <article class="card" id="fourth_details">
         <h3 class="project_details_title">TBD</h3>
-        <div class="screenshots">
+        <div class="screenshots" id="fourth_screenshots">
           <img src="" alt="" class="screenshot">
           <img src="" alt="" class="screenshot">
+          <button class="control" id="left"> < </button>
+          <button class="control" id="right"> > </button>
         </div>
         <h4>What is this?</h4>
         <p>Description</p>

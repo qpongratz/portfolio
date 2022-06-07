@@ -1,15 +1,25 @@
 :root {
+  /* Size Variable */
   --project-circle-size: 6rem;
   --outer-project-circle-size: 30rem;
-  scroll-behavior: smooth;
+  /* Color Variables */
   --main-green: #8fdc91;
   --off-black: #292f36;
   --pink: #ff6b6b;
   --orange: #ff9f1c;
   --white: #eee5e9;
+  /* Timing Variables */
+  --long-animation-duration: 12s;
+  --short-animation-duration: 700ms;
+
+
   color: var(--off-black);
+  scroll-behavior: smooth;
 }
 
+.hidden {
+  display: none;
+}
 .project_preview:focus-visible .explanation {
   outline-offset: .5rem ;
   outline: 1rem solid var(--pink);
@@ -124,14 +134,29 @@ h2 {
 
 .screenshots {
   display: flex;
+  position: relative;
+  overflow: hidden;
+  height: 40rem;
 }
 
 .screenshot {
-  max-width: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
-.screenshot:first-child {
-  display:none;
+.control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: min-content;
+}
+
+#left {
+  left: 0;
+}
+
+#right {
+  right: 0;
 }
 
 .links {
@@ -223,7 +248,7 @@ h2 {
     position: absolute;
     animation-name: rotate-around;
     animation-timing-function: linear;
-    animation-duration: 10s;
+    animation-duration: var(--long-animation-duration);
     animation-iteration-count: infinite;
     height: var(--outer-project-circle-size);
     width: var(--outer-project-circle-size);
@@ -246,7 +271,7 @@ h2 {
     width: var(--project-circle-size);
     text-align: center;
     animation-name: stay-upright;
-    animation-duration: 10s;
+    animation-duration: var(--long-animation-duration);
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     transition: border-radius .7s;
@@ -287,7 +312,7 @@ h2 {
   .explanation {
     background-color: var(--off-black);
     transition: all;
-    transition-duration: .7s;
+    transition-duration: var(--short-animation-duration);
     transform: scale(0);
     transform-origin: 0%;
     position: absolute;
@@ -304,16 +329,12 @@ h2 {
     width: 100%;
     object-fit: cover;
     border-radius: inherit;
-    transition: transform .7s;
+    transition: transform var(--short-animation-duration);
   }
   main {
     margin-top: 20rem;
   }
   .card {
     border-radius: 1rem;
-  }
-
-  .screenshot:first-child {
-    display: initial;
   }
 }
