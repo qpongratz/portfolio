@@ -38,6 +38,13 @@ nav{
 
 .name {
   text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  font-size: 3rem;
+  color: var(--white);
+  text-shadow: 1px 1px 1px #292f36;
 }
 
 h2 {
@@ -121,7 +128,7 @@ h2 {
 
 @media (min-width: 600px) {
   body {
-    background-image: url('pictures/Name.svg.svg');
+    background-image: url('pictures/name.svg');
     background-repeat:no-repeat;
     background-size: 1280px ;
   }
