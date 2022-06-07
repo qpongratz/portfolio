@@ -60,6 +60,8 @@ body {
 }
 
 nav{
+  position: fixed;
+  z-index: 10;
   background-color: var(--orange);
   width: 100vw;
   margin: 0;
@@ -74,10 +76,6 @@ nav{
   list-style: none;
   margin-top: 0;
   padding: 1rem;
-}
-
-.navigation a:first-child {
-  display: none;
 }
 
 .name {
@@ -194,7 +192,6 @@ h2 {
   font-weight: bold;
   font-size: 2rem;
   transition: opacity var(--short-animation-duration);
-  opacity: 0;
 }
 
 .control:hover {
@@ -387,5 +384,8 @@ h2 {
   }
   .card {
     border-radius: 1rem;
+  }
+  .control {
+    opacity: 0;
   }
 }
