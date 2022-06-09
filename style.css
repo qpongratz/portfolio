@@ -71,7 +71,7 @@ nav{
 }
 
 .off-screen {
-  transform: translateY(-100%) !important;
+  transform: translateY(-110%) !important;
 }
 
 .navigation {
